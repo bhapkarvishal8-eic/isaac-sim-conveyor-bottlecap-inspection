@@ -1,0 +1,63 @@
+__include__: [
+  '../dataset/bottle_cap_detection.yml',
+  '../runtime.yml',
+  './include/dataloader.yml',
+  './include/optimizer.yml',
+  './include/rtdetrv2_r50vd.yml',
+]
+
+# Phase C (conveyor bottle inspection). Fine-tuned with `-t` from the Phase 4 pill/box detector
+# (output/rtdetrv2_r18vd_pillbox_fixedscale_v3/best.pth): same architecture and 2-class head; GitHub
+# (ImageNet backbone / COCO weights) is unreachable from this network.
+output_dir: ./output/rtdetrv2_r18vd_bottlecap_v1
+checkpoint_freq: 4
+
+PResNet:
+  depth: 18
+  freeze_at: -1
+  freeze_norm: False
+  pretrained: False   # weights come from the -t checkpoint
+
+HybridEncoder:
+  in_channels: [128, 256, 512]
+  hidden_dim: 256
+  expansion: 0.5
+
+RTDETRTransformerv2:
+  num_layers: 3
+
+epoches: 16
+
+optimizer:
+  type: AdamW
+  params:
+    -
+      params: '^(?=.*(?:norm|bn)).*$'
+      weight_decay: 0.
+
+train_dataloader:
+  dataset:
+    transforms:
+      # No RandomZoomOut / RandomIoUCrop: the inspection camera is fixed, so train at the deployment
+      # scale (the pill detector's scale mismatch was the main lesson of Phase 3/4).
+      # scale: False -> raw [0,255] input, same as the deployed ONNX preprocessing.
+      ops:
+        - {type: RandomPhotometricDistort, p: 0.5}
+        - {type: RandomHorizontalFlip}
+        - {type: Resize, size: [640, 640]}
+        - {type: SanitizeBoundingBoxes, min_size: 1}
+        - {type: ConvertPILImage, dtype: 'float32', scale: False}
+        - {type: ConvertBoxes, fmt: 'cxcywh', normalize: True}
+      policy:
+        name: stop_epoch
+        epoch: 14
+        ops: ['RandomPhotometricDistort']
+  collate_fn:
+    scales: ~
+
+val_dataloader:
+  dataset:
+    transforms:
+      ops:
+        - {type: Resize, size: [640, 640]}
+        - {type: ConvertPILImage, dtype: 'float32', scale: False}

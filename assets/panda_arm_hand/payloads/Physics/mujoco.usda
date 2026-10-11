@@ -1,0 +1,555 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.3"
+    }
+    defaultPrim = "panda"
+    doc = """Generated from Composed Stage of root layer /tmp/tmpqykh31a3/panda.usdc
+
+
+Generated from Composed Stage of root layer /tmp/urdf_import_panda_arm_hand_yt66l08g/usdex_panda_arm_hand/panda.usdc
+
+
+Generated from Composed Stage of root layer /tmp/urdf_import_panda_arm_hand_yt66l08g/temp_panda_arm_hand/panda_arm_hand.usd
+
+
+Generated from Composed Stage of root layer /home/vishal/poc/conveyor_inspection/assets/panda_arm_hand/payloads/base.usd
+"""
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    subLayers = [
+        @./physics.usda@
+    ]
+    upAxis = "Z"
+)
+
+over "panda"
+{
+    over "Physics"
+    {
+        def MjcActuator "panda_joint1_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -6.981317043304443, -1.3962633609771729, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = 87
+            uniform double mjc:forceRange:min = -87
+            uniform double[] mjc:gainPrm = [6.981317043304443, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            prepend rel mjc:target = </panda/Physics/panda_joint1>
+        }
+
+        def MjcActuator "panda_joint2_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -6.981317043304443, -1.3962633609771729, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = 87
+            uniform double mjc:forceRange:min = -87
+            uniform double[] mjc:gainPrm = [6.981317043304443, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            prepend rel mjc:target = </panda/Physics/panda_joint2>
+        }
+
+        def MjcActuator "panda_joint3_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -6.981317043304443, -1.3962633609771729, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = 87
+            uniform double mjc:forceRange:min = -87
+            uniform double[] mjc:gainPrm = [6.981317043304443, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            prepend rel mjc:target = </panda/Physics/panda_joint3>
+        }
+
+        def MjcActuator "panda_joint4_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -6.981317043304443, -1.3962633609771729, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = 87
+            uniform double mjc:forceRange:min = -87
+            uniform double[] mjc:gainPrm = [6.981317043304443, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            prepend rel mjc:target = </panda/Physics/panda_joint4>
+        }
+
+        def MjcActuator "panda_joint5_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -6.981317043304443, -1.3962633609771729, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = 12
+            uniform double mjc:forceRange:min = -12
+            uniform double[] mjc:gainPrm = [6.981317043304443, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            prepend rel mjc:target = </panda/Physics/panda_joint5>
+        }
+
+        def MjcActuator "panda_joint6_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -6.981317043304443, -1.3962633609771729, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = 12
+            uniform double mjc:forceRange:min = -12
+            uniform double[] mjc:gainPrm = [6.981317043304443, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            prepend rel mjc:target = </panda/Physics/panda_joint6>
+        }
+
+        def MjcActuator "panda_joint7_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -6.981317043304443, -1.3962633609771729, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = 12
+            uniform double mjc:forceRange:min = -12
+            uniform double[] mjc:gainPrm = [6.981317043304443, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            prepend rel mjc:target = </panda/Physics/panda_joint7>
+        }
+
+        def MjcActuator "panda_finger_joint1_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -2000, -100, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = 20
+            uniform double mjc:forceRange:min = -20
+            uniform double[] mjc:gainPrm = [2000, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            prepend rel mjc:target = </panda/Physics/panda_finger_joint1>
+        }
+
+        def MjcActuator "panda_finger_joint2_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -2000, -100, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = 20
+            uniform double mjc:forceRange:min = -20
+            uniform double[] mjc:gainPrm = [2000, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            prepend rel mjc:target = </panda/Physics/panda_finger_joint2>
+        }
+
+        over "panda_hand_joint"
+        {
+        }
+
+        over "panda_finger_joint1" (
+            delete apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+        }
+
+        over "panda_finger_joint2" (
+            delete apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+        }
+
+        over "panda_joint1" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "panda_joint2" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "panda_joint3" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "panda_joint4" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "panda_joint5" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "panda_joint6" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "panda_joint7" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "root_joint"
+        {
+        }
+    }
+
+    over "Geometry"
+    {
+        over "panda_link0"
+        {
+            over "panda_link1"
+            {
+                over "panda_link2"
+                {
+                    over "panda_link3"
+                    {
+                        over "panda_link4"
+                        {
+                            over "panda_link5"
+                            {
+                                over "panda_link6"
+                                {
+                                    over "panda_link7"
+                                    {
+                                        over "panda_link8"
+                                        {
+                                            over "panda_hand"
+                                            {
+                                                over "panda_leftfinger"
+                                                {
+                                                    over "finger"
+                                                    {
+                                                        over "tn__Part__Feature007_pO"
+                                                        {
+                                                        }
+
+                                                        over "tn__Part__Feature001006_bT"
+                                                        {
+                                                        }
+                                                    }
+
+                                                    over "finger_1"
+                                                    {
+                                                    }
+                                                }
+
+                                                over "panda_rightfinger"
+                                                {
+                                                    over "finger"
+                                                    {
+                                                        over "tn__Part__Feature007_pO"
+                                                        {
+                                                        }
+
+                                                        over "tn__Part__Feature001006_bT"
+                                                        {
+                                                        }
+                                                    }
+
+                                                    over "finger_1"
+                                                    {
+                                                    }
+                                                }
+
+                                                over "hand"
+                                                {
+                                                    over "tn__Part__Feature002011_bT"
+                                                    {
+                                                    }
+
+                                                    over "tn__Part__Feature005005_bT"
+                                                    {
+                                                    }
+
+                                                    over "tn__Part__Feature011_pO"
+                                                    {
+                                                    }
+
+                                                    over "tn__Part__Feature001011_bT"
+                                                    {
+                                                    }
+
+                                                    over "tn__Part__Feature005000_bT"
+                                                    {
+                                                    }
+                                                }
+
+                                                over "hand_1"
+                                                {
+                                                }
+                                            }
+                                        }
+
+                                        over "link7"
+                                        {
+                                            over "tn__Part__Mirroring000_qR"
+                                            {
+                                            }
+
+                                            over "tn__Part__Mirroring002000_cW0"
+                                            {
+                                            }
+
+                                            over "tn__Part__Mirroring003000_cW0"
+                                            {
+                                            }
+
+                                            over "tn__Part__Mirroring005000_cW0"
+                                            {
+                                            }
+
+                                            over "tn__Part__Mirroring006000_cW0"
+                                            {
+                                            }
+
+                                            over "tn__Part__Mirroring007000_cW0"
+                                            {
+                                            }
+
+                                            over "tn__Part__Mirroring001001_cW0"
+                                            {
+                                            }
+
+                                            over "tn__Part__Mirroring004001_cW0"
+                                            {
+                                            }
+                                        }
+
+                                        over "link7_1"
+                                        {
+                                        }
+                                    }
+
+                                    over "link6"
+                                    {
+                                        over "tn__Shell012000_XH"
+                                        {
+                                        }
+
+                                        over "tn__Part__Feature001002_bT"
+                                        {
+                                        }
+
+                                        over "tn__Part__Feature002002_bT"
+                                        {
+                                        }
+
+                                        over "tn__Face064000_mF"
+                                        {
+                                        }
+
+                                        over "tn__Face065000_mF"
+                                        {
+                                        }
+
+                                        over "tn__Face374000_mF"
+                                        {
+                                        }
+
+                                        over "tn__Shell002_lC"
+                                        {
+                                        }
+
+                                        over "tn__Face539000_mF"
+                                        {
+                                        }
+
+                                        over "tn__Union000_lC"
+                                        {
+                                        }
+
+                                        over "tn__Union001000_XH"
+                                        {
+                                        }
+
+                                        over "tn__Shell002002_XH"
+                                        {
+                                        }
+
+                                        over "tn__Shell003002_XH"
+                                        {
+                                        }
+
+                                        over "tn__Shell004000_XH"
+                                        {
+                                        }
+
+                                        over "tn__Shell005000_XH"
+                                        {
+                                        }
+
+                                        over "tn__Shell007000_XH"
+                                        {
+                                        }
+
+                                        over "tn__Shell011000_XH"
+                                        {
+                                        }
+
+                                        over "tn__Shell006000_XH"
+                                        {
+                                        }
+                                    }
+
+                                    over "link6_1"
+                                    {
+                                    }
+                                }
+
+                                over "link5"
+                                {
+                                    over "tn__Part__Feature004_pO"
+                                    {
+                                    }
+
+                                    over "tn__Shell005_lC"
+                                    {
+                                    }
+
+                                    over "tn__Shell001004_XH"
+                                    {
+                                    }
+                                }
+
+                                over "link5_1"
+                                {
+                                }
+                            }
+
+                            over "link4"
+                            {
+                                over "tn__Part__Feature005_pO"
+                                {
+                                }
+
+                                over "tn__Part__Feature002003_bT"
+                                {
+                                }
+
+                                over "tn__Part__Feature003002_bT"
+                                {
+                                }
+
+                                over "tn__Part__Feature001003_bT"
+                                {
+                                }
+                            }
+
+                            over "link4_1"
+                            {
+                            }
+                        }
+
+                        over "link3"
+                        {
+                            over "tn__Part__Feature006_pO"
+                            {
+                            }
+
+                            over "tn__Part__Feature001004_bT"
+                            {
+                            }
+
+                            over "tn__Part__Feature002004_bT"
+                            {
+                            }
+
+                            over "tn__Part__Feature003003_bT"
+                            {
+                            }
+                        }
+
+                        over "link3_1"
+                        {
+                        }
+                    }
+
+                    over "link2"
+                    {
+                    }
+
+                    over "link2_1"
+                    {
+                    }
+                }
+
+                over "link1"
+                {
+                }
+
+                over "link1_1"
+                {
+                }
+            }
+
+            over "link0"
+            {
+                over "tn__Part__Feature017001_bT"
+                {
+                }
+
+                over "tn__Part__Feature022001_bT"
+                {
+                }
+
+                over "tn__Part__Feature023001_bT"
+                {
+                }
+
+                over "tn__Part__Feature019001_bT"
+                {
+                }
+
+                over "tn__Part__Feature018001_bT"
+                {
+                }
+
+                over "tn__Face636001_mF"
+                {
+                }
+
+                over "tn__Shell001001_XH"
+                {
+                }
+
+                over "tn__Shell002003_XH"
+                {
+                }
+
+                over "tn__Shell003_lC"
+                {
+                }
+
+                over "tn__Shell003003_XH"
+                {
+                }
+
+                over "tn__Shell009001_XH"
+                {
+                }
+
+                over "tn__Shell010001_XH"
+                {
+                }
+            }
+
+            over "link0_1"
+            {
+            }
+        }
+    }
+
+    over "Materials"
+    {
+    }
+
+    over "VisualMaterials"
+    {
+    }
+}
+

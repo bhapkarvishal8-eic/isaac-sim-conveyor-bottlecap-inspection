@@ -1,0 +1,408 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.3"
+    }
+    defaultPrim = "panda"
+    doc = """Generated from Composed Stage of root layer /tmp/tmpqykh31a3/panda.usdc
+
+
+Generated from Composed Stage of root layer /tmp/urdf_import_panda_arm_hand_yt66l08g/usdex_panda_arm_hand/panda.usdc
+
+
+Generated from Composed Stage of root layer /tmp/urdf_import_panda_arm_hand_yt66l08g/temp_panda_arm_hand/panda_arm_hand.usd
+
+
+Generated from Composed Stage of root layer /home/vishal/poc/conveyor_inspection/assets/panda_arm_hand/payloads/base.usd
+"""
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+over "panda"
+{
+    over "Geometry" (
+        prepend apiSchemas = ["PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+    )
+    {
+        bool newton:selfCollisionEnabled = 0
+
+        over "panda_link0" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            point3f physics:centerOfMass = (0, 0, 0)
+            float3 physics:diagonalInertia = (0.012988698, 0.016535528, 0.020331163)
+            float physics:mass = 2.8142028
+            quatf physics:principalAxes = (1, 0, 0, 0)
+
+            over "panda_link1" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            )
+            {
+                point3f physics:centerOfMass = (0, 0, 0)
+                float3 physics:diagonalInertia = (0.00906812, 0.014378987, 0.01868639)
+                float physics:mass = 2.3599997
+                quatf physics:principalAxes = (0.70710677, 0, 0.70710677, 0)
+
+                over "panda_link2" (
+                    prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    point3f physics:centerOfMass = (0, 0, 0)
+                    float3 physics:diagonalInertia = (0.009142912, 0.014697537, 0.019038873)
+                    float physics:mass = 2.3795187
+                    quatf physics:principalAxes = (-0.5, 0.5, 0.5, 0.5)
+
+                    over "panda_link3" (
+                        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                    )
+                    {
+                        point3f physics:centerOfMass = (0, 0, 0)
+                        float3 physics:diagonalInertia = (0.012930018, 0.01427346, 0.015024212)
+                        float physics:mass = 2.6498823
+                        quatf physics:principalAxes = (-0.70710677, 0.70710677, 0, 0)
+
+                        over "panda_link4" (
+                            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                        )
+                        {
+                            point3f physics:centerOfMass = (0, 0, 0)
+                            float3 physics:diagonalInertia = (0.013387461, 0.014514325, 0.015517555)
+                            float physics:mass = 2.6948018
+                            quatf physics:principalAxes = (1, 0, 0, 0)
+
+                            over "panda_link5" (
+                                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                            )
+                            {
+                                point3f physics:centerOfMass = (0, 0, 0)
+                                float3 physics:diagonalInertia = (0.011502338, 0.027066046, 0.03255657)
+                                float physics:mass = 2.9812818
+                                quatf physics:principalAxes = (0.70710677, 0, 0.70710677, 0)
+
+                                over "panda_link6" (
+                                    prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                )
+                                {
+                                    point3f physics:centerOfMass = (0, 0, 0)
+                                    float3 physics:diagonalInertia = (0.0026052564, 0.003989723, 0.004704859)
+                                    float physics:mass = 1.1285807
+                                    quatf physics:principalAxes = (1, 0, 0, 0)
+
+                                    over "panda_link7" (
+                                        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                    )
+                                    {
+                                        point3f physics:centerOfMass = (0, 0, 0)
+                                        float3 physics:diagonalInertia = (0.0006316592, 0.0006319639, 0.0010607721)
+                                        float physics:mass = 0.40529126
+                                        quatf physics:principalAxes = (1, 0, 0, 0)
+
+                                        over "panda_link8"
+                                        {
+                                            over "panda_hand" (
+                                                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                            )
+                                            {
+                                                point3f physics:centerOfMass = (0, 0, 0)
+                                                float3 physics:diagonalInertia = (0.0005782786, 0.0021310295, 0.0023394448)
+                                                float physics:mass = 0.5583305
+                                                quatf physics:principalAxes = (-0.5, 0.5, 0.5, 0.5)
+
+                                                over "panda_leftfinger" (
+                                                    prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                                )
+                                                {
+                                                    point3f physics:centerOfMass = (0, 0, 0)
+                                                    float3 physics:diagonalInertia = (0.0000013347496, 0.0000039026368, 0.0000042041306)
+                                                    float physics:mass = 0.014055223
+                                                    quatf physics:principalAxes = (0.70710677, 0, 0.70710677, 0)
+                                                }
+
+                                                over "panda_rightfinger" (
+                                                    prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                                                )
+                                                {
+                                                    point3f physics:centerOfMass = (0, 0, 0)
+                                                    float3 physics:diagonalInertia = (0.0000013347496, 0.0000039026368, 0.0000042041306)
+                                                    float physics:mass = 0.014055223
+                                                    quatf physics:principalAxes = (0.70710677, 0, 0.70710677, 0)
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    over "Physics"
+    {
+        def PhysicsRevoluteJoint "panda_joint1" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 1.3962634
+            float drive:angular:physics:maxForce = 87
+            float drive:angular:physics:stiffness = 6.981317
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            prepend rel physics:body0 = </panda/Geometry/panda_link0>
+            custom rel physics:body1
+            prepend rel physics:body1 = </panda/Geometry/panda_link0/panda_link1>
+            point3f physics:localPos0 = (0, 0, 0.333)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -166.00307
+            float physics:upperLimit = 166.00307
+            custom float urdf:limit:effort = 87
+            custom float urdf:limit:velocity = 2.175
+            custom float urdf:safety_controller:k_position = 100
+            custom float urdf:safety_controller:k_velocity = 40
+            custom float urdf:safety_controller:soft_lower_limit = -2.8973
+            custom float urdf:safety_controller:soft_upper_limit = 2.8973
+        }
+
+        def PhysicsRevoluteJoint "panda_joint2" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 1.3962634
+            float drive:angular:physics:maxForce = 87
+            float drive:angular:physics:stiffness = 6.981317
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            prepend rel physics:body0 = </panda/Geometry/panda_link0/panda_link1>
+            custom rel physics:body1
+            prepend rel physics:body1 = </panda/Geometry/panda_link0/panda_link1/panda_link2>
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (-0.70710677, 0.70710677, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -101.001
+            float physics:upperLimit = 101.001
+            custom float urdf:limit:effort = 87
+            custom float urdf:limit:velocity = 2.175
+            custom float urdf:safety_controller:k_position = 100
+            custom float urdf:safety_controller:k_velocity = 40
+            custom float urdf:safety_controller:soft_lower_limit = -1.7628
+            custom float urdf:safety_controller:soft_upper_limit = 1.7628
+        }
+
+        def PhysicsRevoluteJoint "panda_joint3" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 1.3962634
+            float drive:angular:physics:maxForce = 87
+            float drive:angular:physics:stiffness = 6.981317
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            prepend rel physics:body0 = </panda/Geometry/panda_link0/panda_link1/panda_link2>
+            custom rel physics:body1
+            prepend rel physics:body1 = </panda/Geometry/panda_link0/panda_link1/panda_link2/panda_link3>
+            point3f physics:localPos0 = (0, -0.316, 1.6543612e-24)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (-0.70710677, -0.70710677, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -166.00307
+            float physics:upperLimit = 166.00307
+            custom float urdf:limit:effort = 87
+            custom float urdf:limit:velocity = 2.175
+            custom float urdf:safety_controller:k_position = 100
+            custom float urdf:safety_controller:k_velocity = 40
+            custom float urdf:safety_controller:soft_lower_limit = -2.8973
+            custom float urdf:safety_controller:soft_upper_limit = 2.8973
+        }
+
+        def PhysicsRevoluteJoint "panda_joint4" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 1.3962634
+            float drive:angular:physics:maxForce = 87
+            float drive:angular:physics:stiffness = 6.981317
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            prepend rel physics:body0 = </panda/Geometry/panda_link0/panda_link1/panda_link2/panda_link3>
+            custom rel physics:body1
+            prepend rel physics:body1 = </panda/Geometry/panda_link0/panda_link1/panda_link2/panda_link3/panda_link4>
+            point3f physics:localPos0 = (0.0825, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.70710677, 0.70710677, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -176.00117
+            float physics:upperLimit = -3.9992454
+            custom float urdf:limit:effort = 87
+            custom float urdf:limit:velocity = 2.175
+            custom float urdf:safety_controller:k_position = 100
+            custom float urdf:safety_controller:k_velocity = 40
+            custom float urdf:safety_controller:soft_lower_limit = -3.0718
+            custom float urdf:safety_controller:soft_upper_limit = -0.0698
+        }
+
+        def PhysicsRevoluteJoint "panda_joint5" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 1.3962634
+            float drive:angular:physics:maxForce = 12
+            float drive:angular:physics:stiffness = 6.981317
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            prepend rel physics:body0 = </panda/Geometry/panda_link0/panda_link1/panda_link2/panda_link3/panda_link4>
+            custom rel physics:body1
+            prepend rel physics:body1 = </panda/Geometry/panda_link0/panda_link1/panda_link2/panda_link3/panda_link4/panda_link5>
+            point3f physics:localPos0 = (-0.0825, 0.384, 6.617445e-24)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.70710677, -0.70710677, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -166.00307
+            float physics:upperLimit = 166.00307
+            custom float urdf:limit:effort = 12
+            custom float urdf:limit:velocity = 2.61
+            custom float urdf:safety_controller:k_position = 100
+            custom float urdf:safety_controller:k_velocity = 40
+            custom float urdf:safety_controller:soft_lower_limit = -2.8973
+            custom float urdf:safety_controller:soft_upper_limit = 2.8973
+        }
+
+        def PhysicsRevoluteJoint "panda_joint6" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 1.3962634
+            float drive:angular:physics:maxForce = 12
+            float drive:angular:physics:stiffness = 6.981317
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            prepend rel physics:body0 = </panda/Geometry/panda_link0/panda_link1/panda_link2/panda_link3/panda_link4/panda_link5>
+            custom rel physics:body1
+            prepend rel physics:body1 = </panda/Geometry/panda_link0/panda_link1/panda_link2/panda_link3/panda_link4/panda_link5/panda_link6>
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.70710677, 0.70710677, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -1.0026761
+            float physics:upperLimit = 215.00241
+            custom float urdf:limit:effort = 12
+            custom float urdf:limit:velocity = 2.61
+            custom float urdf:safety_controller:k_position = 100
+            custom float urdf:safety_controller:k_velocity = 40
+            custom float urdf:safety_controller:soft_lower_limit = -0.0175
+            custom float urdf:safety_controller:soft_upper_limit = 3.7525
+        }
+
+        def PhysicsRevoluteJoint "panda_joint7" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 1.3962634
+            float drive:angular:physics:maxForce = 12
+            float drive:angular:physics:stiffness = 6.981317
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            prepend rel physics:body0 = </panda/Geometry/panda_link0/panda_link1/panda_link2/panda_link3/panda_link4/panda_link5/panda_link6>
+            custom rel physics:body1
+            prepend rel physics:body1 = </panda/Geometry/panda_link0/panda_link1/panda_link2/panda_link3/panda_link4/panda_link5/panda_link6/panda_link7>
+            point3f physics:localPos0 = (0.088, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.70710677, 0.70710677, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -166.00307
+            float physics:upperLimit = 166.00307
+            custom float urdf:limit:effort = 12
+            custom float urdf:limit:velocity = 2.61
+            custom float urdf:safety_controller:k_position = 100
+            custom float urdf:safety_controller:k_velocity = 40
+            custom float urdf:safety_controller:soft_lower_limit = -2.8973
+            custom float urdf:safety_controller:soft_upper_limit = 2.8973
+        }
+
+        def PhysicsPrismaticJoint "panda_finger_joint1" (
+            prepend apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+            float drive:linear:physics:damping = 100
+            float drive:linear:physics:maxForce = 20
+            float drive:linear:physics:stiffness = 2000
+            uniform token drive:linear:physics:type = "force"
+            uniform token physics:axis = "Y"
+            custom rel physics:body0
+            prepend rel physics:body0 = </panda/Geometry/panda_link0/panda_link1/panda_link2/panda_link3/panda_link4/panda_link5/panda_link6/panda_link7/panda_link8/panda_hand>
+            custom rel physics:body1
+            prepend rel physics:body1 = </panda/Geometry/panda_link0/panda_link1/panda_link2/panda_link3/panda_link4/panda_link5/panda_link6/panda_link7/panda_link8/panda_hand/panda_leftfinger>
+            point3f physics:localPos0 = (0, 6.938894e-18, 0.0584)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = 0
+            float physics:upperLimit = 0.04
+            custom float urdf:limit:effort = 20
+            custom float urdf:limit:velocity = 0.2
+        }
+
+        def PhysicsPrismaticJoint "panda_finger_joint2" (
+            prepend apiSchemas = ["NewtonMimicAPI", "PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+            float drive:linear:physics:damping = 100
+            float drive:linear:physics:maxForce = 20
+            float drive:linear:physics:stiffness = 2000
+            uniform token drive:linear:physics:type = "force"
+            rel newton:mimicJoint = </panda/Physics/panda_finger_joint1>
+            uniform token physics:axis = "Y"
+            custom rel physics:body0
+            prepend rel physics:body0 = </panda/Geometry/panda_link0/panda_link1/panda_link2/panda_link3/panda_link4/panda_link5/panda_link6/panda_link7/panda_link8/panda_hand>
+            custom rel physics:body1
+            prepend rel physics:body1 = </panda/Geometry/panda_link0/panda_link1/panda_link2/panda_link3/panda_link4/panda_link5/panda_link6/panda_link7/panda_link8/panda_hand/panda_rightfinger>
+            point3f physics:localPos0 = (0, 6.938894e-18, 0.0584)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0, -1, 0, 0)
+            quatf physics:localRot1 = (0, -1, 0, 0)
+            float physics:lowerLimit = 0
+            float physics:upperLimit = 0.04
+            custom float urdf:limit:effort = 20
+            custom float urdf:limit:velocity = 0.2
+        }
+
+        def PhysicsFixedJoint "root_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </panda>
+            custom rel physics:body1
+            prepend rel physics:body1 = </panda/Geometry/panda_link0>
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "panda_hand_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </panda/Geometry/panda_link0/panda_link1/panda_link2/panda_link3/panda_link4/panda_link5/panda_link6/panda_link7/panda_link8>
+            custom rel physics:body1
+            prepend rel physics:body1 = </panda/Geometry/panda_link0/panda_link1/panda_link2/panda_link3/panda_link4/panda_link5/panda_link6/panda_link7/panda_link8/panda_hand>
+            point3f physics:localPos0 = (0, 1.323489e-23, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.9238795, -4.9638083e-17, 2.3432612e-17, -0.38268352)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+    }
+}
+

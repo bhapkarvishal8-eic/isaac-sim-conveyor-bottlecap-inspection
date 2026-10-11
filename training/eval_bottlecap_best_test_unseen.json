@@ -1,0 +1,72 @@
+{
+ "model": "models/bottlecap_best.onnx",
+ "split": "sdg_data/test_unseen",
+ "images": 2000,
+ "bottles": {
+  "ok": 2120,
+  "nocap": 2102
+ },
+ "det_thresh": 0.3,
+ "at_det_thresh": {
+  "reject_thresh": 0.3,
+  "nocap_recall": 1.0,
+  "false_reject_rate": 0.0,
+  "missed_detections": 0
+ },
+ "sweep": [
+  {
+   "reject_thresh": 0.1,
+   "nocap_recall": 1.0,
+   "false_reject_rate": 0.0,
+   "missed_detections": 0
+  },
+  {
+   "reject_thresh": 0.15,
+   "nocap_recall": 1.0,
+   "false_reject_rate": 0.0,
+   "missed_detections": 0
+  },
+  {
+   "reject_thresh": 0.2,
+   "nocap_recall": 1.0,
+   "false_reject_rate": 0.0,
+   "missed_detections": 0
+  },
+  {
+   "reject_thresh": 0.25,
+   "nocap_recall": 1.0,
+   "false_reject_rate": 0.0,
+   "missed_detections": 0
+  },
+  {
+   "reject_thresh": 0.3,
+   "nocap_recall": 1.0,
+   "false_reject_rate": 0.0,
+   "missed_detections": 0
+  },
+  {
+   "reject_thresh": 0.4,
+   "nocap_recall": 1.0,
+   "false_reject_rate": 0.0,
+   "missed_detections": 0
+  },
+  {
+   "reject_thresh": 0.5,
+   "nocap_recall": 1.0,
+   "false_reject_rate": 0.0,
+   "missed_detections": 0
+  },
+  {
+   "reject_thresh": 0.6,
+   "nocap_recall": 1.0,
+   "false_reject_rate": 0.0,
+   "missed_detections": 0
+  },
+  {
+   "reject_thresh": 0.7,
+   "nocap_recall": 1.0,
+   "false_reject_rate": 0.0,
+   "missed_detections": 0
+  }
+ ]
+}
